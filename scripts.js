@@ -111,15 +111,18 @@ function arrow2 () {
     document.getElementById('sectores').style.transform = "translateX(" +posicionInicial + "vw)"
 }
 
-// let i = 0
+document.addEventListener('DOMContentLoaded' , () => {
+    const elementosCarousel = document.querySelectorAll('.carousel');
+    M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        dist: -60,
+        shift: 5,
+        padding: 5,
+        numVisible: 7,
+        indicators: true,
+        noWrap: false,
+        fullWidth: false,
+    });
 
+});
 
-// const demofunction = setInterval(() => {
-
-//     i ++
-    
-// }, 100);
-
-// const demofunction2 = setInterval(() => {
-//     i += 0
-// })

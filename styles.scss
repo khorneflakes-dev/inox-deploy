@@ -23,6 +23,8 @@ sans-serif;
 
 body {
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 16px;               /* width of the entire scrollbar */
@@ -107,57 +109,44 @@ body::-webkit-scrollbar {
     }
 }
 
-.container {
+.container2 {
     position: relative;
     display: flex;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
-    position: relative;
     background-color: rgb(42, 45, 58);
-    .container-texto {
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        flex-direction: column;
-        z-index: 5;
-        color: white;
-        font-family: $fuente-titulos;
-        font-size: 2vw;
-        background-color: #081e369d;
-
-        .logo {
-            margin-top: 10vh;
-            height: 20vh;
-            img {
-                height: 100%;
-            }
-        }
-        .title {
-            height: 20vh;
-            img {
-                height: 100%;
-            }
-        }
-        .texto {
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-top: 5vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-    }
-
+    
     .slider {
         display: flex;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
-        
+        overflow: hidden;
+    
+        .description {
+            display: flex;
+            height: 90vh;
+            color: #ffffff;
+            z-index: 4;
+            position: absolute;
+            align-items: flex-end;
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Mada', sans-serif;
+            font-weight: 100;
+            // background-color: #081e362f;
+            padding-bottom: 10vh;
+            font-size: 3.6vh;
+            text-align: center;
+            margin-left: 7vw;
+            margin-right: 7vw;
+    
+        }
 
         img {
             width: 100%;
             height: 100%;
+            filter: brightness(60%);
         }
     }
 
@@ -176,22 +165,6 @@ body::-webkit-scrollbar {
         animation: slide3 30s infinite;
     }
 
-    .description {
-        display: flex;
-        width: 90%;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        height: 90vh;
-        color: #ffffff;
-        font-size: 6vh;
-        z-index: 4;
-        position: absolute;
-        align-items: flex-end;
-        font-family: 'Bebas Neue', cursive;
-        background-color: #081e362f;
-        padding-bottom: 10vh;
-
-    }
 }
 
 .frame2 {
@@ -204,6 +177,7 @@ body::-webkit-scrollbar {
     padding-bottom: 0vh;
     height: 100vh;
     overflow: hidden;
+    width: 100%;
 
     .producto {
         margin-top: 10vh;
@@ -701,6 +675,7 @@ body::-webkit-scrollbar {
 .home-background {
     position: absolute;
     width: 100%;
+
     .homecito {
         height: 100vh;
     }
@@ -785,129 +760,53 @@ body::-webkit-scrollbar {
     }
 }
 
-.home-frame3 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80vh;
-    background-color: transparent;
-    .title {
-        padding-top: 8vh;
-        font-family: $fuente-titulos;
-        font-size: 3vh;
-        color: white;
-    }
-
-    .button {
-        margin-top: 8vh;
-        height: 5vh;
-        width: 14vw;
-        cursor: pointer;
-        font-size: 2.2vh;
-        background-color: rgb(184, 7, 7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1vh;
-        color: white;
-        font-family: $fuente-titulos;
-        a {
-            text-decoration: none;
-            color: white;
-        }
-    }
-.separador-sector {
-    height: 8vh;
+.titulo {
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 40px;
+	color: #fff;
 }
-.arrow1, .arrow2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.158);
-    height: 100%;
-    width: 7.7vw;
+.subtitulo { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: $container-fontText;
+    margin-top: 0;
 }
 
-.sectores-slider {
-    display: flex;
-    align-items: center;
+.linea-division {
+	width: 80%;
+	height: 2px;
+	background-color: #36221c;
 }
-.sectores-main {
-    width: 83.6vw;
-    overflow: hidden;
-    display: flex;
-}
-
-
-    .sectores {
-        display: flex;
-        width: 167.2vw;
-        height: 16.72vw;
-        transition: 300ms;
-        // &:hover {
-        //     transform: translateX(-33.44vw);
-
-        // }
-
-        .sector {
-            position: relative;
-            width: 16.72vw;
-            height: 16.72vw;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            &:hover {
-                .sector-fondo {
-                    transform: scale(1);
-                }
-            }
-            .sector-fondo {
-                position: absolute;
-                z-index: 100;
-                height: 40vh;
-                width: 18vw;
-                z-index: 10;
-                transition: 0.3s ease-in-out;
-                transform: scale(1.2);
-                filter: contrast(87%);
-
-                img {
-                    height: 100%;
-                }
-            }
-
-            .title {
-                z-index: 20;
-                font-family: $fuente-texto;
-                display: flex;
-                height: 8vh;
-                width: 18vw;
-                font-weight: 300;
-                position: absolute;
-                font-size: 4vh;
-                justify-content: center;
-                align-items: center;
-
-            }
-
-            .icono-sector {
-                z-index: 20;
-                padding-top: 10vh;
-                height: 20vh;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                display: none;
-
-                img {
-                    width: 100%;
-                    width: 7vw;
-                }
-            }
-        }
-    }
+.carousel {
+	min-height: 500px;
+	.carousel-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		user-select: none;
+		width: 400px;
+		height: 400px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			border-radius: 15px;
+		}
+	}
+	.indicators {
+		.indicator-item {
+			background: #313131;
+		}
+	}
 }
 
 .home-frame4{
@@ -1049,4 +948,70 @@ body::-webkit-scrollbar {
             }
         }
     }
+}
+
+@media(max-width: 500px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+        position: relative;
+
+        .navbar{
+            display: none;
+        }
+    
+        .burger-menu{
+            display: flex;
+            flex-direction: column;
+            z-index: 130;
+            transition: ease-in-out 0.5s;
+            position: fixed;
+           
+        }
+        
+        .container{
+            height: 60vh;
+            width: 100vw;
+            
+            .slider{
+
+                .description{
+                    font-size: 2.6vh;
+                    font-weight: 300;
+                    height: 55vh;
+                }
+
+                img{
+                    height: 100%;
+                    width: auto;
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .home-frame2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            height: 70vh;
+            .title{
+                color: rgb(24, 24, 24);
+                font-weight: 300;
+                font-size: 18px;
+            }
+            .subtitle{
+                font-size: 18px;
+            }
+        }
+    }
+    body::-webkit-scrollbar {
+        display: none;
+
+    }
+
+
 }
