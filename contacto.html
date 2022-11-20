@@ -1,52 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inox | contacto</title>
-    <link rel="stylesheet" href="./contacto.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="./images/inox-main-logo.svg">
+
 </head>
 
 <body>
+
     <div class="navbar" id="navbar">
         <div class="navbar-options logo">
-            <div class="main-logo">
-                <a href="../index.html#home-frame2">
-                    <img src="../images/inox-logo2.svg" alt="">
+            <div class="main-logo" id="logo">
+                <a href="index.html">
+                    <img src="./images/inox-logo2.svg" alt="">
                 </a>
             </div>
         </div>
 
         <div class="navbar-options">
-            <a href="#"> </a>
+            <a></a>
         </div>
         <div class="navbar-options">
-            <a href="./productos.html">Productos</a>
+            <a href="productos.html" id="options1">Productos</a>
         </div>
         <div class="navbar-options">
-            <a href="./servicios.html">Servicios</a>
+            <a href="servicios.html" id="options2">Servicios</a>
         </div>
         <div class="navbar-options">
-            <a href="./nosotros.html">Nosotros</a>
+            <a href="nosotros.html" id="options3">Nosotros</a>
         </div>
         <div class="navbar-options">
-            <a href="./contacto.html">Contáctanos</a>
+            <a href="contacto.html" id="options4">Contáctanos</a>
         </div>
     </div>
-    <div class="socials">
-        <div class="iconos"><img src="../images/fb-icon.svg"></div>
-        <div class="iconos"><img src="../images/ig-icon.svg"></div>
-        <div class="iconos"><img src="../images/wp-icon.svg"></div>
-    </div>
+
+    <nav class="nav-wrapper">
+        <div class="container3">
+            <div class="inox-logo">
+                <img src="./images/inox-logo2.svg" alt="" class>
+            </div>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons icon-blue">menu</i>
+            </a>
+        </div>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Enlace</a></li>
+            <li><a href="#">Enlace</a></li>
+            <li><a href="#">Enlace</a></li>
+        </ul>
+    </nav>
+    <ul class="sidenav" id="menu-responsive">
+        <div class="burger-options">
+            <a href="productos.html" id="options1">Productos</a>
+        </div>
+        <div class="burger-options">
+            <a href="servicios.html" id="options2">Servicios</a>
+        </div>
+        <div class="burger-options">
+            <a href="nosotros.html" id="options3">Nosotros</a>
+        </div>
+        <div class="burger-options">
+            <a href="contacto.html" id="options4">Contáctanos</a>
+        </div>
+        <div class="burger-socials">
+            <div class="iconos fb"><img src="./images/fb-icon.svg"></div>
+            <div class="iconos ig"><img src="./images/ig-icon.svg"></div>
+            <div class="iconos wp"><img src="./images/wp-icon.svg"></div>
+    
+        </div>
+
+    </ul>
+
     <div class="fondo-contacto">
-        <img src="../images/background-contactos.jpg">
+        <img src="./images/background-contactos.jpg">
     </div>
     <div class="header">
         <div class="imagen-contacto">
-            <!-- <img src="../images/fondo1.jpg" alt=""> -->
-            <img src="../images/servicios2-1.svg" alt="">
+            <!-- <img src="./images/fondo1.jpg" alt=""> -->
+            <img src="./images/servicios2-1.svg" alt="">
         </div>
 
         <div class="texto">
@@ -137,10 +180,10 @@
                     <div class="title">EL ALTO</div>
                     <div class="detailed-info">
                         <div class="icons">
-                            <div class="icon"><img src="../images/location.svg" alt=""></div>
-                            <div class="icon"><img src="../images/mail.svg" alt=""></div>
-                            <div class="icon"><img src="../images/telephone.svg" alt=""></div>
-                            <div class="icon"><img src="../images/phone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/location.svg" alt=""></div>
+                            <div class="icon"><img src="./images/mail.svg" alt=""></div>
+                            <div class="icon"><img src="./images/telephone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/phone.svg" alt=""></div>
                         </div>
                         <div class="descriptions">
                             <div class="text">Av. 6 de Marzo Nº 50 Esq. Tiahuanacu</div>
@@ -155,10 +198,10 @@
                     <div class="title">LA PAZ</div>
                     <div class="detailed-info">
                         <div class="icons">
-                            <div class="icon"><img src="../images/location.svg" alt=""></div>
-                            <div class="icon"><img src="../images/mail.svg" alt=""></div>
-                            <div class="icon"><img src="../images/telephone.svg" alt=""></div>
-                            <div class="icon"><img src="../images/phone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/location.svg" alt=""></div>
+                            <div class="icon"><img src="./images/mail.svg" alt=""></div>
+                            <div class="icon"><img src="./images/telephone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/phone.svg" alt=""></div>
                         </div>
                         <div class="descriptions">
                             <div class="text">Av. Perú Nº 153 Zona Challapampa</div>
@@ -173,10 +216,10 @@
                     <div class="title">SANTA CRUZ</div>
                     <div class="detailed-info">
                         <div class="icons">
-                            <div class="icon"><img src="../images/location.svg" alt=""></div>
-                            <div class="icon"><img src="../images/mail.svg" alt=""></div>
-                            <div class="icon"><img src="../images/telephone.svg" alt=""></div>
-                            <div class="icon"><img src="../images/phone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/location.svg" alt=""></div>
+                            <div class="icon"><img src="./images/mail.svg" alt=""></div>
+                            <div class="icon"><img src="./images/telephone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/phone.svg" alt=""></div>
                         </div>
                         <div class="descriptions">
                             <div class="text">Av. Pedro Ribera Esq. Guayaramerín Nº 689</div>
@@ -191,10 +234,10 @@
                     <div class="title">COCHABAMBA</div>
                     <div class="detailed-info">
                         <div class="icons">
-                            <div class="icon"><img src="../images/location.svg" alt=""></div>
-                            <div class="icon"><img src="../images/mail.svg" alt=""></div>
-                            <div class="icon"><img src="../images/telephone.svg" alt=""></div>
-                            <div class="icon"><img src="../images/phone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/location.svg" alt=""></div>
+                            <div class="icon"><img src="./images/mail.svg" alt=""></div>
+                            <div class="icon"><img src="./images/telephone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/phone.svg" alt=""></div>
                         </div>
                         <div class="descriptions">
                             <div class="text">Av. Capitan Ustariz Km 5 (altura surtidor)</div>
@@ -209,10 +252,10 @@
                     <div class="title">TARIJA</div>
                     <div class="detailed-info">
                         <div class="icons">
-                            <div class="icon"><img src="../images/location.svg" alt=""></div>
-                            <div class="icon"><img src="../images/mail.svg" alt=""></div>
-                            <div class="icon"><img src="../images/telephone.svg" alt=""></div>
-                            <div class="icon"><img src="../images/phone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/location.svg" alt=""></div>
+                            <div class="icon"><img src="./images/mail.svg" alt=""></div>
+                            <div class="icon"><img src="./images/telephone.svg" alt=""></div>
+                            <div class="icon"><img src="./images/phone.svg" alt=""></div>
                         </div>
                         <div class="descriptions">
                             <div class="text">Av. Potosí Nº 716 Zona Central</div>
@@ -236,11 +279,18 @@
         </div>
 
     </div>
+
+
     <div class="footer-main">
+        <div class="footer-logo">
+            <img src="./images/inox-garantia-logo.svg" alt="">
+        </div>
         <div class="footer">
+
             <div class="footer-cuerpo">
+
                 <div class="marca">
-                    <div class="logo"><img src="../images/inox-logo.svg" alt=""></div>
+                    <div class="logo"><img src="./images/inox-logo.svg" alt=""></div>
                     <div class="detailed">
                         Suministros Industriales <br>
                         y Petroleros
@@ -249,6 +299,7 @@
                         Servicio al Cliente 24/7
                     </div>
                 </div>
+
                 <div class="shop">
                     <div class="title">TIENDA</div>
                     <div class="detailed">
@@ -259,6 +310,7 @@
                         <div class="subdetailed">Terminos y privacidad</div>
                     </div>
                 </div>
+
                 <div class="about">
                     <div class="title">ACERCA DE INOX</div>
                     <div class="detailed">
@@ -270,6 +322,7 @@
                         <div class="subdetailed">Preguntas frecuentes</div>
                     </div>
                 </div>
+
                 <div class="global">
                     <div class="title">GLOBAL</div>
                     <div class="detailed">
@@ -281,17 +334,21 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-creditos">
-                <div class="marca-registrada">© Inox Supply Ingeniería. Todos los derechos reservados. </div>
-                <div class="design"></div>
-            </div>
+            
         </div>
-        <div class="footer-logo">
-            <img src="../images/inox-garantia-logo.svg" alt="">
+
+        <div class="footer-creditos">
+            <div class="marca-registrada">© Inox Supply Ingeniería. Todos los derechos reservados.</div>
+            <div class="design"></div>
         </div>
+
     </div>
 
-
+    <div class="socials">
+        <div class="iconos"><img src="./images/fb-icon.svg"></div>
+        <div class="iconos"><img src="./images/ig-icon.svg"></div>
+        <div class="iconos"><img src="./images/wp-icon.svg"></div>
+    </div>
 </body>
 
 </html>

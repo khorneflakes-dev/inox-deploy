@@ -1,54 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inox | conocenos</title>
-    <link rel="stylesheet" href="./contacto.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="./images/inox-main-logo.svg">
+
 </head>
 
 <body>
+
     <div class="navbar" id="navbar">
         <div class="navbar-options logo">
-            <div class="main-logo">
-                <a href="../index.html#home-frame2">
-                    <img src="../images/inox-logo2.svg" alt="">
+            <div class="main-logo" id="logo">
+                <a href="index.html">
+                    <img src="./images/inox-logo2.svg" alt="">
                 </a>
             </div>
         </div>
 
         <div class="navbar-options">
-            <a href="#"> </a>
+            <a></a>
         </div>
         <div class="navbar-options">
-            <a href="./productos.html">Productos</a>
+            <a href="productos.html" id="options1">Productos</a>
         </div>
         <div class="navbar-options">
-            <a href="./servicios.html">Servicios</a>
+            <a href="servicios.html" id="options2">Servicios</a>
         </div>
         <div class="navbar-options">
-            <a href="./nosotros.html">Nosotros</a>
+            <a href="nosotros.html" id="options3">Nosotros</a>
         </div>
         <div class="navbar-options">
-            <a href="./contacto.html">Contáctanos</a>
+            <a href="contacto.html" id="options4">Contáctanos</a>
         </div>
     </div>
-    <div class="socials">
-        <div class="iconos"><img src="../images/fb-icon.svg"></div>
-        <div class="iconos"><img src="../images/ig-icon.svg"></div>
-        <div class="iconos"><img src="../images/wp-icon.svg"></div>
-    </div>
+
+    <nav class="nav-wrapper">
+        <div class="container3">
+            <div class="inox-logo">
+                <img src="./images/inox-logo2.svg" alt="" class>
+            </div>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons icon-blue">menu</i>
+            </a>
+        </div>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Enlace</a></li>
+            <li><a href="#">Enlace</a></li>
+            <li><a href="#">Enlace</a></li>
+        </ul>
+    </nav>
+    <ul class="sidenav" id="menu-responsive">
+        <div class="burger-options">
+            <a href="productos.html" id="options1">Productos</a>
+        </div>
+        <div class="burger-options">
+            <a href="servicios.html" id="options2">Servicios</a>
+        </div>
+        <div class="burger-options">
+            <a href="nosotros.html" id="options3">Nosotros</a>
+        </div>
+        <div class="burger-options">
+            <a href="contacto.html" id="options4">Contáctanos</a>
+        </div>
+        <div class="burger-socials">
+            <div class="iconos fb"><img src="./images/fb-icon.svg"></div>
+            <div class="iconos ig"><img src="./images/ig-icon.svg"></div>
+            <div class="iconos wp"><img src="./images/wp-icon.svg"></div>
+    
+        </div>
+
+    </ul>
+
+
     <div class="fondo-servicios1">
-        <img src="../images/background-servicios2.jpg">
+        <img src="./images/background-servicios2.jpg">
 
     </div>
     <div class="about-main">
 
         <div class="about">
             <div class="imagen-about">
-                <img src="../images/worker1.png" alt="">
+                <img src="./images/worker1.png" alt="">
             </div>
             <div class="descripcion-about">
                 <div class="titulo-descripcion">Nuestra Misión</div>
@@ -69,7 +113,7 @@
                 </div>
             </div>
             <div class="imagen-about">
-                <img src="../images/worker2.png" alt="">
+                <img src="./images/worker2.png" alt="">
             </div>
         </div>
     </div>
@@ -81,17 +125,17 @@
         </div>
         <div class="sedcards">
             <div class="sedcard">
-                <img src="../images/empleado1.jpg" alt="">
+                <img src="./images/empleado1.jpg" alt="">
                 <div class="name">Alan Grainger</div>
                 <div class="description">Administrador La Paz</div>
             </div>
             <div class="sedcard">
-                <img src="../images/empleado2.jpg" alt="">
+                <img src="./images/empleado2.jpg" alt="">
                 <div class="name">Amanda Obo</div>
                 <div class="description">Gerente Financiero</div>
             </div>
             <div class="sedcard">
-                <img src="../images/empleado3.jpg" alt="">
+                <img src="./images/empleado3.jpg" alt="">
                 <div class="name">Grace Unu</div>
                 <div class="description">Directora de Marketing</div>
             </div>
@@ -110,11 +154,20 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="footer-main">
+        <div class="footer-logo">
+            <img src="./images/inox-garantia-logo.svg" alt="">
+        </div>
         <div class="footer">
+
             <div class="footer-cuerpo">
+
                 <div class="marca">
-                    <div class="logo"><img src="../images/inox-logo.svg" alt=""></div>
+                    <div class="logo"><img src="./images/inox-logo.svg" alt=""></div>
                     <div class="detailed">
                         Suministros Industriales <br>
                         y Petroleros
@@ -123,6 +176,7 @@
                         Servicio al Cliente 24/7
                     </div>
                 </div>
+
                 <div class="shop">
                     <div class="title">TIENDA</div>
                     <div class="detailed">
@@ -133,6 +187,7 @@
                         <div class="subdetailed">Terminos y privacidad</div>
                     </div>
                 </div>
+
                 <div class="about">
                     <div class="title">ACERCA DE INOX</div>
                     <div class="detailed">
@@ -144,6 +199,7 @@
                         <div class="subdetailed">Preguntas frecuentes</div>
                     </div>
                 </div>
+
                 <div class="global">
                     <div class="title">GLOBAL</div>
                     <div class="detailed">
@@ -155,17 +211,21 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-creditos">
-                <div class="marca-registrada">© Inox Supply Ingeniería. Todos los derechos reservados. </div>
-                <div class="design"></div>
-            </div>
+            
         </div>
-        <div class="footer-logo">
-            <img src="../images/inox-garantia-logo.svg" alt="">
+
+        <div class="footer-creditos">
+            <div class="marca-registrada">© Inox Supply Ingeniería. Todos los derechos reservados.</div>
+            <div class="design"></div>
         </div>
+
     </div>
 
+    <div class="socials">
+        <div class="iconos"><img src="./images/fb-icon.svg"></div>
+        <div class="iconos"><img src="./images/ig-icon.svg"></div>
+        <div class="iconos"><img src="./images/wp-icon.svg"></div>
+    </div>
 </body>
-
 
 </html>
