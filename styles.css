@@ -1114,5 +1114,58 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     position: fixed;
     z-index: 10000;
+    background: white;
+    height: 6vh;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .nav-wrapper .container3 {
+    display: flex;
+    justify-content: space-between !important;
+    align-content: center;
+    align-items: center;
+    gap: 45vw;
+  }
+  .nav-wrapper .container3 .inox-logo {
+    display: flex;
+    height: 5vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .nav-wrapper .container3 .inox-logo img {
+    height: 100%;
+  }
+  .nav-wrapper .container3 .sidenav-trigger {
+    display: flex;
+    width: 5vw;
+  }
+  .nav-wrapper .container3 .sidenav-trigger .icon-blue {
+    color: #081E36;
+  }
+  .sidenav {
+    padding-top: 10vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    z-index: 9000;
+    flex-direction: column;
+  }
+  .sidenav .burger-options a {
+    font-size: 4vh;
+    font-family: "Mada", sans-serif;
+    color: #081E36;
+  }
+  .sidenav .burger-socials {
+    display: flex;
+    position: relative;
+    gap: 7vw;
+    padding-top: 50vh;
+  }
+  .sidenav .burger-socials .iconos {
+    height: 7vh;
+  }
+  .sidenav .burger-socials .iconos img {
+    height: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

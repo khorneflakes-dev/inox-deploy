@@ -113,7 +113,7 @@ function arrow2 () {
 
 document.addEventListener('DOMContentLoaded' , () => {
     const elementosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(elementosCarousel, {
+    M.Carousel.Autoinit(elementosCarousel, {
         duration: 150,
         dist: -60,
         shift: 5,
