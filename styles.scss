@@ -40,6 +40,10 @@ body::-webkit-scrollbar {
     width: 2px;
   }
 
+.nav-wrapper{
+    display: none;
+}
+
 .socials {
     position: fixed;
     z-index: 120;
@@ -1011,16 +1015,6 @@ body::-webkit-scrollbar {
             display: none;
         }
     
-        .burger-menu{
-            display: flex;
-            flex-direction: column;
-            z-index: 130;
-            transition: ease-in-out 0.5s;
-            position: fixed;
-           
-        }
-        
-
         .container2{
             height: 100vh;
             width: 100vw;
@@ -1080,13 +1074,17 @@ body::-webkit-scrollbar {
         .row{
             .demo{
                 .carousel{
-                    min-height: 70vw;
+                    min-height: 80vw;
                     .carousel-item{
-                        width: 70vw;
-                        height: 70vw;
+                        width: 80vw;
+                        height: 80vw;
+
                         .subtitulo{
                             font-size: 4vh;
                             }
+                    }
+                    .indicators{
+                        display: none;
                     }
                 }
         }
@@ -1098,5 +1096,117 @@ body::-webkit-scrollbar {
             }
         }
     }
+
+    .home-frame4{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 230vh;
+        background: #fff;
+        .title{
+            text-align: center;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+            font-size: 3vh;
+        }
+        .home-servicios{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5vh;
+            .home-servicio{
+                padding-bottom: 5vh;
+                border-bottom: 1px solid black;
+                width: 100%;
+                .button{
+                    width: 20vw;
+                }
+            }
+            .last{
+                border-bottom: none;
+            }
+        }
+    }
+    .home-background{
+        .homecito{
+            height: 170vh;
+        }
+        .homecito1{
+            height: 100%;
+            padding-bottom: 200vh;
+        }
+    }
+    
+    
+    .contadores{
+        height: 100vh;
+        z-index: 5000;
+        flex-direction: column;
+        height: auto;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+        gap: 1vh;
+        .contador{
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+
+            .signo{
+                font-size: 10vw;
+            }
+            .texto{
+                font-size: 5vw;
+            }
+            .numero{
+                font-size: 15vw;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .home-frame6{
+        padding: 5vw;
+        height: auto;
+        padding-bottom: 17vh;
+        .title{
+            padding-top: 2vh;
+            font-size: 2vh;
+            text-align: center;
+        }
+        .home-marcas{
+            padding-top: 3vh;
+            .marca{
+                width: 15vw;
+            }
+        }
+    }
+    .footer-main{
+        margin-top: 0vh;
+        height: 20vh;
+        .footer{
+            margin-top: 0;
+        }
+        .footer-logo{
+            width: 100%;
+            left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -5vh;
+            img{
+                width: 20vw;
+            }
+        }
+    }
+    .socials{
+        display: none;
+    }
+
+    .nav-wrapper{
+        display: flex;
+        position: fixed;
+        z-index: 10000;
+        
+    }
+
 
 }
