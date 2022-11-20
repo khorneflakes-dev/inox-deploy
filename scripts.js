@@ -113,7 +113,7 @@ function arrow2 () {
 
 document.addEventListener('DOMContentLoaded' , () => {
     const elementosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.Autoinit(elementosCarousel, {
+    M.Carousel.init(elementosCarousel, {
         duration: 150,
         dist: -60,
         shift: 5,
@@ -126,6 +126,9 @@ document.addEventListener('DOMContentLoaded' , () => {
 
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     M.AutoInit();
+// })
 
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
