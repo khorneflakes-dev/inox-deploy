@@ -47,8 +47,8 @@ body::-webkit-scrollbar {
 
 .socials {
     position: fixed;
-    z-index: 120;
-    top: 85vh;
+    z-index: 10000;
+    top: 75vh;
     left: 85vw;
     display: flex;
     height: 12vh;
@@ -576,114 +576,71 @@ body::-webkit-scrollbar {
     }
 }
 
-.footer {
-    height: 55vh;
-    background-color: #081E36;
+
+.footer-main{
+    display: flex;
+    flex-direction: column;
     color: white;
-    overflow: hidden;
-
-    .title {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 3vh;
-
-    }
-
-    .detailed {
-        padding-top: 1vh;
-        font-family: 'Mada', sans-serif;
-        font-size: 1.7vh;
-    }
-
-    .subdetailed {
-        padding-top: 0.7vh;
-    }
-
-    .detailed2 {
-        font-family: 'Mada', sans-serif;
-        font-size: 1.7vh;
-
-    }
-
-    .footer-cuerpo {
-        padding-left: 2.5vw;
+    z-index: 10000;
+    height: 40vh;
+    position: absolute;
+    background-color: #081E36;
+    width: 100vw;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    justify-content: flex-start;
+    .footer{
         display: flex;
-        padding-top: 15vh;
-        height: 31vh;
-
-        .marca {
-            width: 25vw;
-
-            .logo {
-                height: 6.5vh;
-
-                img {
-                    height: 100%;
+        width: 100%;
+        .footer-cuerpo{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .marca{
+                width: 30%;
+            }
+            .shop, .about, .global{
+                width: 20%;
+                .title{
+                    font-weight: 600;
+                    font-size: 3vh;
                 }
             }
-
-            .detailed {
-                padding-top: 1vh;
-            }
-
-            .detailed2 {
-                padding-top: 1vh;
-            }
-        }
-
-        .shop {
-            width: 13vw;
-        }
-
-        .about {
-            display: inline;
-            width: 12vw;
-        }
-
-        .global {
-            width: 13vw;
-            padding-right: 15vw;
         }
     }
-
-    .footer-creditos {
-        height: 20vh;
-        width: 50vw;
-        font-size: 1.7vh;
-        font-family: 'Mada', sans-serif;
-        font-weight: 100;
-        border-top: 1px solid rgba(255, 255, 255, 0.384);
-        height: 10vh;
-        width: 100%;
-        padding-left: 4.7vw;
+    .footer-creditos{
+        border-top: 1px solid white;
+        padding-top: 2vh;
+        margin-top: 5vh;
         display: flex;
-
-        .marca-registrada {
-            padding-top: 3vh;
-            width: 100%;
-        }
-    }
-}
-
-.footer-main {
-    position: relative;
-    height: 55vh;
-
-    .footer {
-        margin-top: 10vh;
-        position: absolute;
         width: 100%;
-    }
-
-    .footer-logo {
-        position: absolute;
-        width: 10vw;
-        left: 45vw;
-        padding-top: -5vh;
-
-        img {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .marca-registrada{
             width: 100%;
+            justify-content: flex-start;
+            padding-left: 6vw;
+            padding-right: 6vw;
+            text-align: center;
+            display: flex;
+            position: absolute;
         }
     }
+    .footer-logo {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        text-align: center;
+        display: flex;
+        position: relative;
+        // background: aqua;
+        top: -18vh;
+        margin-bottom: -14vh;
+    }
+    
 }
 
 .demo {
@@ -721,7 +678,7 @@ body::-webkit-scrollbar {
     .homecito2 {
         width: 100%;
         z-index: 100;
-        height: 200vh;
+        height: 100vh;
         .homecito-background {
             position: sticky;
             height: 100vh;
@@ -977,7 +934,7 @@ body::-webkit-scrollbar {
     padding-right: 20vw;
     flex-direction: column;
     padding-bottom: 25vh;
-    margin-bottom: -10vh;
+    margin-bottom: -5vh;
     .title {
         margin-top: 3vw;
         margin-bottom: 1vw;
@@ -1198,9 +1155,6 @@ body::-webkit-scrollbar {
             }
         }
     }
-    .socials{
-        display: none;
-    }
 
     .nav-wrapper{
         display: flex;
@@ -1245,6 +1199,7 @@ body::-webkit-scrollbar {
         height: 100vh;
         z-index: 9000;
         flex-direction: column;
+        position: fixed;
         .burger-options{
             a{
                 font-size: 4vh;
@@ -1262,6 +1217,41 @@ body::-webkit-scrollbar {
                 img{height: 100%;}
             }
         }
+    }
+    .socials{
+        display: none;
+    }
+    .footer-main{
+        height: 32vh;
+        .footer{
+            position: relative;
+            margin-top: 7vh;
+            .footer-cuerpo{
+                width: 100%;
+                .marca{
+                    width: 100%;
+                    padding-left: 10vw;
+                    padding-right: 10vw;
+                    .logo{
+                        height: 5vh;
+                        padding-bottom: 2vh;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+                .shop, .about, .global{
+                    display: none;
+                }
+            }
+        }
+        .footer-creditos{
+            font-size: 12px;
+        }
+        .footer-logo{
+            top: -10vh;
+        }
+        
     }
 
 }

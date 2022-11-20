@@ -33,8 +33,8 @@ body::-webkit-scrollbar-thumb {
 
 .socials {
   position: fixed;
-  z-index: 120;
-  top: 85vh;
+  z-index: 10000;
+  top: 75vh;
   left: 85vw;
   display: flex;
   height: 12vh;
@@ -542,94 +542,68 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2vh;
 }
 
-.footer {
-  height: 55vh;
-  background-color: #081E36;
-  color: white;
-  overflow: hidden;
-}
-.footer .title {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3vh;
-}
-.footer .detailed {
-  padding-top: 1vh;
-  font-family: "Mada", sans-serif;
-  font-size: 1.7vh;
-}
-.footer .subdetailed {
-  padding-top: 0.7vh;
-}
-.footer .detailed2 {
-  font-family: "Mada", sans-serif;
-  font-size: 1.7vh;
-}
-.footer .footer-cuerpo {
-  padding-left: 2.5vw;
-  display: flex;
-  padding-top: 15vh;
-  height: 31vh;
-}
-.footer .footer-cuerpo .marca {
-  width: 25vw;
-}
-.footer .footer-cuerpo .marca .logo {
-  height: 6.5vh;
-}
-.footer .footer-cuerpo .marca .logo img {
-  height: 100%;
-}
-.footer .footer-cuerpo .marca .detailed {
-  padding-top: 1vh;
-}
-.footer .footer-cuerpo .marca .detailed2 {
-  padding-top: 1vh;
-}
-.footer .footer-cuerpo .shop {
-  width: 13vw;
-}
-.footer .footer-cuerpo .about {
-  display: inline;
-  width: 12vw;
-}
-.footer .footer-cuerpo .global {
-  width: 13vw;
-  padding-right: 15vw;
-}
-.footer .footer-creditos {
-  height: 20vh;
-  width: 50vw;
-  font-size: 1.7vh;
-  font-family: "Mada", sans-serif;
-  font-weight: 100;
-  border-top: 1px solid rgba(255, 255, 255, 0.384);
-  height: 10vh;
-  width: 100%;
-  padding-left: 4.7vw;
-  display: flex;
-}
-.footer .footer-creditos .marca-registrada {
-  padding-top: 3vh;
-  width: 100%;
-}
-
 .footer-main {
-  position: relative;
-  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 10000;
+  height: 40vh;
+  position: absolute;
+  background-color: #081E36;
+  width: 100vw;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content: flex-start;
 }
 .footer-main .footer {
-  margin-top: 10vh;
-  position: absolute;
+  display: flex;
   width: 100%;
+}
+.footer-main .footer .footer-cuerpo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-main .footer .footer-cuerpo .marca {
+  width: 30%;
+}
+.footer-main .footer .footer-cuerpo .shop, .footer-main .footer .footer-cuerpo .about, .footer-main .footer .footer-cuerpo .global {
+  width: 20%;
+}
+.footer-main .footer .footer-cuerpo .shop .title, .footer-main .footer .footer-cuerpo .about .title, .footer-main .footer .footer-cuerpo .global .title {
+  font-weight: 600;
+  font-size: 3vh;
+}
+.footer-main .footer-creditos {
+  border-top: 1px solid white;
+  padding-top: 2vh;
+  margin-top: 5vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-main .footer-creditos .marca-registrada {
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  text-align: center;
+  display: flex;
+  position: absolute;
 }
 .footer-main .footer-logo {
-  position: absolute;
-  width: 10vw;
-  left: 45vw;
-  padding-top: -5vh;
-}
-.footer-main .footer-logo img {
   width: 100%;
+  justify-content: flex-start;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  text-align: center;
+  display: flex;
+  position: relative;
+  top: -18vh;
+  margin-bottom: -14vh;
 }
 
 .demo {
@@ -664,7 +638,7 @@ body::-webkit-scrollbar-thumb {
 .home-background .homecito2 {
   width: 100%;
   z-index: 100;
-  height: 200vh;
+  height: 100vh;
 }
 .home-background .homecito2 .homecito-background {
   position: -webkit-sticky;
@@ -911,7 +885,7 @@ body::-webkit-scrollbar-thumb {
   padding-right: 20vw;
   flex-direction: column;
   padding-bottom: 25vh;
-  margin-bottom: -10vh;
+  margin-bottom: -5vh;
 }
 .home-frame6 .title {
   margin-top: 3vw;
@@ -1107,9 +1081,6 @@ body::-webkit-scrollbar-thumb {
   .footer-main .footer-logo img {
     width: 20vw;
   }
-  .socials {
-    display: none;
-  }
   .nav-wrapper {
     display: flex;
     position: fixed;
@@ -1150,6 +1121,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     z-index: 9000;
     flex-direction: column;
+    position: fixed;
   }
   .sidenav .burger-options a {
     font-size: 4vh;
@@ -1167,5 +1139,39 @@ body::-webkit-scrollbar-thumb {
   }
   .sidenav .burger-socials .iconos img {
     height: 100%;
+  }
+  .socials {
+    display: none;
+  }
+  .footer-main {
+    height: 32vh;
+  }
+  .footer-main .footer {
+    position: relative;
+    margin-top: 7vh;
+  }
+  .footer-main .footer .footer-cuerpo {
+    width: 100%;
+  }
+  .footer-main .footer .footer-cuerpo .marca {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .footer-main .footer .footer-cuerpo .marca .logo {
+    height: 5vh;
+    padding-bottom: 2vh;
+  }
+  .footer-main .footer .footer-cuerpo .marca .logo img {
+    height: 100%;
+  }
+  .footer-main .footer .footer-cuerpo .shop, .footer-main .footer .footer-cuerpo .about, .footer-main .footer .footer-cuerpo .global {
+    display: none;
+  }
+  .footer-main .footer-creditos {
+    font-size: 12px;
+  }
+  .footer-main .footer-logo {
+    top: -10vh;
   }
 }/*# sourceMappingURL=styles.css.map */

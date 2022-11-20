@@ -126,9 +126,6 @@ function arrow2 () {
 
 // });
 
-// // document.addEventListener('DOMContentLoaded', function() {
-// //     M.AutoInit();
-// // })
 
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
