@@ -16,6 +16,7 @@ $navbar-fontText: 'Montserrat',
 sans-serif;
 $container-fontText: 'Alumni Sans',
 sans-serif;
+$fuente-carrusel: 'Mada', sans-serif;
 
 * {
     margin: 0 auto;
@@ -112,13 +113,26 @@ body::-webkit-scrollbar {
 .container2 {
     position: relative;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     overflow: hidden;
     background-color: rgb(42, 45, 58);
+
+    .main-logo2{
+        display: inline;
+        position: relative;
+        z-index: 500;
+        top: 25vh;
+        img{
+            height: 30vh;
+            filter: brightness(80%);
+        }
+    }
     
     .slider {
         display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100vh;
         position: absolute;
@@ -131,7 +145,6 @@ body::-webkit-scrollbar {
             z-index: 4;
             position: absolute;
             align-items: flex-end;
-            font-family: 'Bebas Neue', cursive;
             font-family: 'Mada', sans-serif;
             font-weight: 100;
             // background-color: #081e362f;
@@ -140,6 +153,7 @@ body::-webkit-scrollbar {
             text-align: center;
             margin-left: 7vw;
             margin-right: 7vw;
+            top: 10vh;
     
         }
 
@@ -694,6 +708,7 @@ body::-webkit-scrollbar {
             img {
                 height: 100%;
                 width: 100%;
+                filter: brightness(100%);
             }
         }
     }
@@ -760,54 +775,88 @@ body::-webkit-scrollbar {
     }
 }
 
-.titulo {
-	font-size: 40px;
-	font-family: 'Dancing Script', cursive;
-	margin-bottom: 40px;
-	color: #fff;
-}
-.subtitulo { 
-    color: #fff;
-    margin: 7px 0;
-    font-size: 50px;
-    font-weight: 600;
-    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
-    font-family: $container-fontText;
-    margin-top: 0;
+.carrusel-aux {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+
+    .row{
+        width: 100vw;
+        padding-top: 5vh;
+        height: 75vh !important;
+
+        .demo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            .titulo {
+                display: inline;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                z-index: 1000;
+                font-size: 4.5vh;
+                font-family: $fuente-carrusel;
+                font-weight: bolder;
+                margin-bottom: 40px;
+                color: #fff;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+
+            }
+            .desliza{
+                display: inline;
+                text-align: center;
+                z-index: 1000;
+                font-size: 2vh;
+                margin-top: -1vh;
+                color: #fff;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+
+
+            }
+            .subtitulo { 
+                color: #fff;
+                margin: 7px 0;
+                font-size: 50px;
+                font-weight: 600;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+                font-family: $container-fontText;
+                margin-top: 0;
+            }
+            
+            .carousel {
+                min-height: 500px;
+                .carousel-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    user-select: none;
+                    width: 400px;
+                    height: 400px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        border-radius: 15px;
+                    }
+                }
+                .indicators {
+                    .indicator-item {
+                        background: #313131;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.linea-division {
-	width: 80%;
-	height: 2px;
-	background-color: #36221c;
-}
-.carousel {
-	min-height: 500px;
-	.carousel-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		user-select: none;
-		width: 400px;
-		height: 400px;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: -1;
-			border-radius: 15px;
-		}
-	}
-	.indicators {
-		.indicator-item {
-			background: #313131;
-		}
-	}
-}
 
 .home-frame4{
     position: relative;
@@ -918,7 +967,7 @@ body::-webkit-scrollbar {
     display: flex;
     position: relative; 
     background-color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 60vh;
     padding-left: 20vw;
     padding-right: 20vw;
     flex-direction: column;
@@ -971,16 +1020,25 @@ body::-webkit-scrollbar {
            
         }
         
-        .container{
-            height: 60vh;
+
+        .container2{
+            height: 100vh;
             width: 100vw;
             
+            .main-logo2{
+                top: 20vh;
+                img{
+                    height: 15vh;
+                }
+            }
+
             .slider{
 
                 .description{
                     font-size: 2.6vh;
                     font-weight: 300;
                     height: 55vh;
+                    top: 45vh;
                 }
 
                 img{
@@ -1013,5 +1071,32 @@ body::-webkit-scrollbar {
 
     }
 
+    .subtitulo{
+        font-size: 5vh;
+    }
+    
+    .carrusel-aux{
+        height: 80vh;
+        .row{
+            .demo{
+                .carousel{
+                    min-height: 70vw;
+                    .carousel-item{
+                        width: 70vw;
+                        height: 70vw;
+                        .subtitulo{
+                            font-size: 4vh;
+                            }
+                    }
+                }
+        }
+
+        .carousel{
+            min-height: 70vw;
+            
+
+            }
+        }
+    }
 
 }

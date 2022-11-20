@@ -84,13 +84,25 @@ body::-webkit-scrollbar-thumb {
 .container2 {
   position: relative;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background-color: rgb(42, 45, 58);
 }
+.container2 .main-logo2 {
+  display: inline;
+  position: relative;
+  z-index: 500;
+  top: 25vh;
+}
+.container2 .main-logo2 img {
+  height: 30vh;
+  filter: brightness(80%);
+}
 .container2 .slider {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -103,7 +115,6 @@ body::-webkit-scrollbar-thumb {
   z-index: 4;
   position: absolute;
   align-items: flex-end;
-  font-family: "Bebas Neue", cursive;
   font-family: "Mada", sans-serif;
   font-weight: 100;
   padding-bottom: 10vh;
@@ -111,6 +122,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   margin-left: 7vw;
   margin-right: 7vw;
+  top: 10vh;
 }
 .container2 .slider img {
   width: 100%;
@@ -643,6 +655,7 @@ body::-webkit-scrollbar-thumb {
 .home-background .homecito1 .homecito-background img {
   height: 100%;
   width: 100%;
+  filter: brightness(100%);
 }
 .home-background .homecito2 {
   width: 100%;
@@ -703,14 +716,44 @@ body::-webkit-scrollbar-thumb {
   color: rgba(0, 0, 0, 0.658);
 }
 
-.titulo {
-  font-size: 40px;
-  font-family: "Dancing Script", cursive;
+.carrusel-aux {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.carrusel-aux .row {
+  width: 100vw;
+  padding-top: 5vh;
+  height: 75vh !important;
+}
+.carrusel-aux .row .demo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.carrusel-aux .row .demo .titulo {
+  display: inline;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  font-size: 4.5vh;
+  font-family: "Mada", sans-serif;
+  font-weight: bolder;
   margin-bottom: 40px;
   color: #fff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
-
-.subtitulo {
+.carrusel-aux .row .demo .desliza {
+  display: inline;
+  text-align: center;
+  z-index: 1000;
+  font-size: 2vh;
+  margin-top: -1vh;
+  color: #fff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+.carrusel-aux .row .demo .subtitulo {
   color: #fff;
   margin: 7px 0;
   font-size: 50px;
@@ -719,17 +762,10 @@ body::-webkit-scrollbar-thumb {
   font-family: "Alumni Sans", sans-serif;
   margin-top: 0;
 }
-
-.linea-division {
-  width: 80%;
-  height: 2px;
-  background-color: #36221c;
-}
-
-.carousel {
+.carrusel-aux .row .demo .carousel {
   min-height: 500px;
 }
-.carousel .carousel-item {
+.carrusel-aux .row .demo .carousel .carousel-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -741,7 +777,7 @@ body::-webkit-scrollbar-thumb {
   width: 400px;
   height: 400px;
 }
-.carousel .carousel-item img {
+.carrusel-aux .row .demo .carousel .carousel-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -752,7 +788,7 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
   border-radius: 15px;
 }
-.carousel .indicators .indicator-item {
+.carrusel-aux .row .demo .carousel .indicators .indicator-item {
   background: #313131;
 }
 
@@ -866,7 +902,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   background-color: rgb(255, 255, 255);
-  height: 50vh;
+  height: 60vh;
   padding-left: 20vw;
   padding-right: 20vw;
   flex-direction: column;
@@ -917,16 +953,23 @@ body::-webkit-scrollbar-thumb {
     transition: ease-in-out 0.5s;
     position: fixed;
   }
-  body .container {
-    height: 60vh;
+  body .container2 {
+    height: 100vh;
     width: 100vw;
   }
-  body .container .slider .description {
+  body .container2 .main-logo2 {
+    top: 20vh;
+  }
+  body .container2 .main-logo2 img {
+    height: 15vh;
+  }
+  body .container2 .slider .description {
     font-size: 2.6vh;
     font-weight: 300;
     height: 55vh;
+    top: 45vh;
   }
-  body .container .slider img {
+  body .container2 .slider img {
     height: 100%;
     width: auto;
     filter: brightness(50%);
@@ -949,5 +992,24 @@ body::-webkit-scrollbar-thumb {
   }
   body::-webkit-scrollbar {
     display: none;
+  }
+  .subtitulo {
+    font-size: 5vh;
+  }
+  .carrusel-aux {
+    height: 80vh;
+  }
+  .carrusel-aux .row .demo .carousel {
+    min-height: 70vw;
+  }
+  .carrusel-aux .row .demo .carousel .carousel-item {
+    width: 70vw;
+    height: 70vw;
+  }
+  .carrusel-aux .row .demo .carousel .carousel-item .subtitulo {
+    font-size: 4vh;
+  }
+  .carrusel-aux .row .carousel {
+    min-height: 70vw;
   }
 }/*# sourceMappingURL=styles.css.map */
