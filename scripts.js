@@ -111,24 +111,24 @@ function arrow2 () {
     document.getElementById('sectores').style.transform = "translateX(" +posicionInicial + "vw)"
 }
 
-document.addEventListener('DOMContentLoaded' , () => {
-    const elementosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(elementosCarousel, {
-        duration: 150,
-        dist: -60,
-        shift: 5,
-        padding: 5,
-        numVisible: 7,
-        indicators: true,
-        noWrap: false,
-        fullWidth: false,
-    });
+// document.addEventListener('DOMContentLoaded' , () => {
+//     const elementosCarousel = document.querySelectorAll('.carousel');
+//     M.Carousel.init(elementosCarousel, {
+//         duration: 150,
+//         dist: -60,
+//         shift: 5,
+//         padding: 5,
+//         numVisible: 7,
+//         indicators: true,
+//         noWrap: false,
+//         fullWidth: false,
+//     });
 
-});
+// });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     M.AutoInit();
-// })
+// // document.addEventListener('DOMContentLoaded', function() {
+// //     M.AutoInit();
+// // })
 
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
