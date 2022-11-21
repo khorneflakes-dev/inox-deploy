@@ -131,3 +131,15 @@ document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
 
   });
+
+
+// setTimeout(() => {
+// document.location.reload();
+// }, 1000);
+
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
